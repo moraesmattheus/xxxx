@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Amor, Para Sempre</title>
+    <!-- Inclui o Tailwind CSS para estilização moderna e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Inter:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom right, #fef2f2, #ffe4e6, #fbcfe8); 
+            color: #4a5568;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1rem;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        .declaration-card {
+            background-color: #ffffff;
+            border-radius: 2rem;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+            max-width: 950px;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 1.5rem;
+        }
+        .declaration-card::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: radial-gradient(circle at center, rgba(255, 182, 193, 0.3) 0%, transparent 70%); 
+            filter: blur(20px);
+            z-index: -1;
+            border-radius: 2.2rem;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); 
+            gap: 1rem;
+            padding-bottom: 1.5rem;
+            justify-items: center;
+        }
+        .image-gallery img {
+            width: 100%;
+            max-width: 200px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 1rem;
+            border: 3px solid #fecaca;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+        .text-content {
+            padding: 1.5rem;
+            text-align: center;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            color: #333333;
+        }
+        .text-content h1 {
+            font-family: 'Parisienne', cursive;
+            font-size: 3.5rem;
+            font-weight: normal;
+            color: #e31b54;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .text-content p {
+            margin-bottom: 1rem;
+        }
+        .text-content .signature {
+            font-family: 'Parisienne', cursive;
+            font-size: 2.2rem;
+            color: #e31b54;
+            margin-top: 2rem;
+            font-weight: normal;
+        }
+        #countdown-timer {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #e31b54;
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        #countdown-timer span {
+            display: inline-block;
+            min-width: 2.5rem;
+        }
+        @media (min-width: 768px) {
+            .declaration-card {
+                flex-direction: row;
+                padding: 2.5rem;
+            }
+            .image-gallery {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-right: 2rem;
+                gap: 1.25rem;
+            }
+            .image-gallery img {
+                height: 200px;
+            }
+            .text-content {
+                flex: 2;
+                text-align: left;
+                padding-left: 2rem;
+            }
+            .text-content h1 {
+                font-size: 4.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="declaration-card">
+        <div class="image-gallery">
+            <img src="https://i.imgur.com/Pb3UY57.jpeg" alt="Sua foto romântica 1" onerror="this.onerror=null;this.src='https://placehold.co/200x180/FFD1DC/333333?text=Erro+ao+carregar+Sua+Foto+1';">
+            <img src="https://i.imgur.com/MMX0J7s.jpeg" alt="Sua foto romântica 2" onerror="this.onerror=null;this.src='https://placehold.co/200x180/C0FFEE/333333?text=Erro+ao+carregar+Sua+Foto+2';">
+            <img src="https://i.imgur.com/vldCGO6.jpeg" alt="Sua foto romântica 3" onerror="this.onerror=null;this.src='https://placehold.co/200x180/D4A6FF/333333?text=Erro+ao+carregar+Sua+Foto+3';">
+            <img src="https://i.imgur.com/Tm0D9hl.jpeg" alt="Sua foto romântica 4" onerror="this.onerror=null;this.src='https://placehold.co/200x180/FFABAB/333333?text=Erro+ao+carregar+Sua+Foto+4';">
+        </div>
+        <div class="text-content">
+            <h1>Para o Meu Amor!</h1>
+            <div id="countdown-timer"></div>
+            <p>Hoje o dia infelizmente começou de um jeito que eu não gostaria… Mas mesmo nos dias difíceis, pensar em você me acalma. Nada muda o quanto eu te amo e o quanto você é importante pra mim. Sei que sou uma pessoa complicada, lento, tenho errado muito, mas gostaria que hoje fosse um dia feliz, de muitas vendas e realizações. Afinal, minha maior realização foi ter te conhecido.</p>
+            <p>Temos muitas conquistas diariamente, e hoje é o primeiro Dia dos Namorados NOIVOS! 😍 Quero que possamos passar todos os próximos juntos, meu amor. Ter você do meu lado transforma qualquer tempestade em abrigo. Você é meu lugar seguro, meu amor em forma de paz.</p>
+            <p>Quero que esse seja só mais um capítulo da nossa história, com carinho, verdade e muito amor, mesmo quando o mundo lá fora estiver pesado.</p>
+            <p class="signature">Te amo muitão. Obrigado por estar comigo sempre. 💖</p>
+        </div>
+    </div>
+    <script>
+        function updateCountdown() {
+            const now = new Date();
+            const targetTime = new Date();
+            targetTime.setHours(19, 30, 0, 0); 
+            if (now.getTime() > targetTime.getTime()) {
+                targetTime.setDate(targetTime.getDate() + 1);
+            }
+            const timeLeft = targetTime.getTime() - now.getTime();
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+            const formattedHours = String(hours).padStart(2, '0');
+            const formattedMinutes = String(minutes).padStart(2, '0');
+            const formattedSeconds = String(seconds).padStart(2, '0');
+            const timerElement = document.getElementById('countdown-timer');
+            if (timeLeft < 0) {
+                timerElement.innerHTML = 'Momo já chegou! ❤️';
+            } else {
+                timerElement.innerHTML = `Tempo para estar com Momo: <span>${formattedHours}</span>h <span>${formattedMinutes}</span>m <span>${formattedSeconds}</span>s`;
+            }
+        }
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>
